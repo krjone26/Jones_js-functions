@@ -10,12 +10,17 @@ function addTheValues(param1, param2){
         addToPage("One of the parameters is not a number. When added they equal: " + param1 + " " + param2);
     } else {
         // let sum = param1 + param2;
-        addToPage("Both values are numbers. Added together they equal: " + (param1 + param2));
+        addToPage("Both values are numbers. Added together they equal: " + (parseInt(param1) + parseInt(param2))); // must parse int
     }
 }
 
 // call the function a few times with different parameters
-// TO DO
+// TO DO (Done)
+addTheValues(2, 3);
+addTheValues("hi", 21);
+addTheValues(6, "hi");
+addTheValues("two", "strings");
+addTheValues("3", 5); // concatenates because not forced into an integer
 
 // let's talk about scope and see it in action
 // function with a local variable to display to the screen
