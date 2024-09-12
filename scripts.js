@@ -4,7 +4,15 @@ function addToPage(string){
 }
 
 // let's write a function that accepts two arguments then adds them together. If the arguments aren't both numbers, concatenate that with the other argument and a space between the args, otherwise perform addition
-// TO DO
+// TO DO (Done)
+function addTheValues(param1, param2){
+    if(isNaN(param1) || isNaN(param2)) {
+        addToPage("One of the parameters is not a number. When added they equal: " + param1 + " " + param2);
+    } else {
+        // let sum = param1 + param2;
+        addToPage("Both values are numbers. Added together they equal: " + (param1 + param2));
+    }
+}
 
 // call the function a few times with different parameters
 // TO DO
@@ -77,19 +85,19 @@ function addToPage(string){
 // XXXXXX
 // XXXXXX
 // Convert into a drawBox function
-if(boxChar === undefined){
-    boxChar = "X";
-}
+// if(boxChar === undefined){
+//     boxChar = "X";
+// }
 // you could also write the code below to assign the value to the boxChar variable 
 // let boxChar = boxChar || "X";
 
-for (let r = 0; r < numRows; r++) {
-    let line = "";
-    for (let c = 0; c < numCols; c++) {
-        line += boxChar;
-    }
-    console.log(line);
-}
+// for (let r = 0; r < numRows; r++) {
+//     let line = "";
+//     for (let c = 0; c < numCols; c++) {
+//         line += boxChar;
+//     }
+//     console.log(line);
+// }
 
 // call our new function with different arguments
 // TO DO
